@@ -1,0 +1,314 @@
+
+:root {
+    --color-nav:#2c3e50;
+    --primry-color-bg:#0F828C;
+    --color:#F8B259;
+    --color-footer:#1a252f;
+    --color-active:#1abc9c;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--color-nav);
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: height 0.5s ease;
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -ms-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+}
+ .navbar-small {
+    height: 60px;
+}
+.nav-link.active {
+    background: var(--color-active) ;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+.nav-link.active:hover {
+    background:  #25ddb8;
+
+}
+/* end Navbar */
+/* Start Landing*/
+.landing {
+    min-height:100vh;
+        display: flex;
+    align-items: center;
+    background-color: var(--primry-color-bg);
+}
+.landing .container .content-landing {
+        text-align: center;
+}
+.landing .container .content-landing  img {
+        max-width: 20%;
+}
+.landing .container .content-landing  .text {
+max-width: 50%;
+    margin: auto;
+}
+.star-icon {
+  position: relative;
+  display: inline-block;
+  color: var(--color);
+}
+
+.star-icon::before,
+.star-icon::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  background-color: white;
+  vertical-align: middle;
+ border-radius: 20px;
+ width: 70px;
+}
+
+@media (max-width: 768px) {
+  .star-icon::before,
+  .star-icon::after {
+    width: 50px;  
+  }
+}
+
+
+/* end Landing */
+
+/* Start content */
+.footer {
+    background-color: var(--color-nav);
+    color: white;
+}
+.footer .container {
+        padding: 50px 40px;
+}
+
+.footer .icons a {
+       border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex
+;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+} 
+.footer-author {
+    background-color: var(--color-footer);
+    padding: 15px;
+    text-align: center;
+}
+.footer-author p {
+    font-size: 16px;
+    font-weight: normal
+}
+/* end content */
+
+/* Start About */
+.about {
+     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: var(--bs-info-text-emphasis);
+}
+.about  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+.about  .star-icon {
+    left: 37%;
+} 
+.about  p {
+    color: white;
+}
+
+/* End About */
+/* Start Portfolio */
+.portfolio {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio h1 {
+      color: var(--color-nav);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.portfolio .title-gallery {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.portfolio .star-icon {
+  position: relative;
+  display: inline-block;
+  color: var(--color-nav);
+}
+
+.portfolio .gallery .img {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+        margin: auto;
+}
+
+.portfolio .gallery .img img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+
+}
+.gallery-parent {
+    margin-bottom: 100px;
+}
+.portfolio .star-icon::before,
+.portfolio .star-icon::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  background-color: var(--color-nav);
+  vertical-align: middle;
+ border-radius: 20px;
+ width: 70px;
+}
+
+@media (max-width: 768px) {
+  .portfolio .star-icon::before,
+  .portfolio .star-icon::after {
+    width: 50px;  
+  }
+}
+.portfolio .gallery  .fa-plus {
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: #0ed3b0d9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: #0ed3b0d9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.portfolio .gallery .img:hover .fa-plus {
+opacity: 1;
+}
+
+/* End Portfolio */
+/* Start Content */
+.content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .text-content {
+        text-align: center;
+            margin-top: 100px;
+            
+}
+.content h2 {
+        text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-nav);
+}
+.content .star-icon::before,
+.content .star-icon::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  background-color: var(--color-nav);
+  vertical-align: middle;
+ border-radius: 20px;
+ width: 70px;
+}
+
+@media (max-width: 768px) {
+  .content .star-icon::before,
+  .content .star-icon::after {
+    width: 50px;  
+  }
+}
+.content form {
+    padding: 40px 50px;
+    width: 400px;
+    margin:30px auto 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 560px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.content form .input {
+    margin: 20px;
+    width: 300px;
+    position: relative;
+}
+.content form .input label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    pointer-events: none;
+        padding: 0 5px;
+}
+.content form input:focus + label,
+.content form input:valid + label {
+     top: 0;
+    background: var(--body-bg-color);
+    font-size: 13px;
+    background: white;
+}
+.content form .input input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+} 
+.content form .btn {
+    background-color: #1abc9c;
+    color: #fff;
+}
+.content form  .gender {
+
+}
+/* End Content */
