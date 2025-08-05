@@ -13,7 +13,7 @@ body {
 /* Start Navbar */
 .navbar {
     background-color: var(--color-nav);
-    padding-block: 30px;
+    padding-block: 20px;
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -24,7 +24,7 @@ body {
     -o-transition: padding  0.5s ease;
 }
  .navbar-small {
- padding-block: 15px;
+ padding-block: 10px;
 }
 /* .navbar */
 .nav-link.active {
@@ -160,10 +160,9 @@ max-width: 50%;
 }
 
 .portfolio .gallery .img {
-    width: 300px;
     cursor: pointer;
     position: relative;
-        margin: auto;
+        margin: auto; 
 }
 
 .portfolio .gallery .img img {
