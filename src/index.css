@@ -13,19 +13,20 @@ body {
 /* Start Navbar */
 .navbar {
     background-color: var(--color-nav);
-    height: 85px;
+    padding-block: 30px;
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: height 0.5s ease;
-    -webkit-transition: height 0.5s ease;
-    -moz-transition: height 0.5s ease;
-    -ms-transition: height 0.5s ease;
-    -o-transition: height 0.5s ease;
+    transition: padding  0.5s ease;
+    -webkit-transition: padding  0.5s ease;
+    -moz-transition: padding  0.5s ease;
+    -ms-transition: padding  0.5s ease;
+    -o-transition: padding  0.5s ease;
 }
  .navbar-small {
-    height: 60px;
+ padding-block: 15px;
 }
+/* .navbar */
 .nav-link.active {
     background: var(--color-active) ;
     display: inline-block;

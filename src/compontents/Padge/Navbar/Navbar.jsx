@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function AppNavbar () {
     const [small, setSmall] = useState(false);
@@ -25,13 +25,13 @@ function AppNavbar () {
     <div className="collapse navbar-collapse " id="navbarNav">
       <ul className="navbar-nav ms-auto ">
         <li className="nav-item text-white">
-          <Link className="nav-link fw-bold text-white active" aria-current="about" to="/about">About</Link>
+          <NavLink className={({isActive})=> `${isActive ? "active":""} nav-link fw-bold text-white`} aria-current="about" to="/about">About</NavLink>
         </li>
         <li className="nav-item text-white">
-          <Link className="nav-link fw-bold text-white" to="/portfolio">Portfolio</Link>
+          <NavLink className={({isActive})=> `${isActive ? "active" : ""} nav-link fw-bold text-white`} to="/portfolio">Portfolio</NavLink>
         </li>
         <li className="nav-item text-white">
-          <Link className="nav-link fw-bold text-white" to="content">Contact</Link>
+          <NavLink className={({isActive})=> `${isActive ? "active" : ""} nav-link fw-bold text-white`} to="content">Contact</NavLink>
         </li>
       </ul>
     </div>
